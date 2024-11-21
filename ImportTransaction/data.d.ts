@@ -1,0 +1,21 @@
+import { ExtraColumnsSection } from './types';
+export declare const GridData: {
+    Column: string;
+    Name: string;
+    Meaning: string;
+    PossibleValues: string;
+    Notes: string;
+}[];
+export declare const predefinedColumns: string[];
+export declare const defaultDocumentTypes: string[];
+export declare const defaultProcessCodes: string[];
+export declare const defaultEntityUseCodes: string[];
+export declare const requiredColumns: string[];
+export declare const originAddress: string[];
+export declare const destinationAddress: string[];
+export declare const originCoordinates: string[];
+export declare const destinationCoordinates: string[];
+export declare const baseOptionalColumns: string[];
+export declare const extraColumns: ExtraColumnsSection;
+export declare const baseAttributesColumns: string[];
+export declare const attributes: string[];

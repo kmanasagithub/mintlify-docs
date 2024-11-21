@@ -1,0 +1,61 @@
+.flex-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 1%; Adjust the gap between elements as needed */
+  margin: -1%; /* Negative margin to counter the gap on the sides */
+}
+
+.flex-item {
+  flex: 0 0 23%;
+  margin: 0 1% 0 1%; /*Same value as the gap to maintain spacing */
+  box-sizing: border-box;
+  /* padding: 0 10px 0 10px; Adjust padding as needed */
+  /* background-color: #f0f0f0; Example background color */
+  /* border: 1px solid #ddd; Example border */
+}
+.label-required::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+}
+.sub-labelF {
+  color: #72767e;
+  font-size: 13px;
+}
+/* .labelF {
+  color: #6f6f6f;
+  display: inline;
+  font-family: Source Sans Pro;
+  font-size: 11px;
+  letter-spacing: 0.98px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+} */
+.inputF {
+  margin-top: 0px !important;
+}
+
+
+/* Ensures the form is below the link */
+.form-container {
+  margin-top: 1rem; /* Add spacing between the link and the form */
+}
+
+/* Flexbox layout to show two fields in one row */
+.custom-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust gap between fields */
+}
+
+.custom-form-row > * {
+  flex: 1 1 48%; /* Take up approximately 48% of the row for two fields per row */
+}
+
+/* Adjust for small screens if necessary */
+@media (max-width: 768px) {
+  .custom-form-row > * {
+    flex: 1 1 100%; /* Stack fields on small screens */
+  }
+}
